@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register form</title>
+    <style>
+:root{
+    --success-color:#2ecc71;
+    --error-color: #e74c3c;
+}
+
+*{
+    box-sizing: border-box;
+}
+#radial-gradient{
+background: radial-gradient(circle, red, white);
+}
+body{
+    background-color: orange;
+    background-image:url("");
+    background-repeat:no-repeat;
+    background-size:150%;
+    font-family:'Open Sans',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: #d6e396;
+    background-image:url("reg.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.3);
+    width: 400px;
+    height: 20;
+
+}
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form{
+
+    padding: 15px 40px;
+
+}
+.form-control{
+
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+
+   color: #777;
+   display: block;
+   margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid  black;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+
+    border-color:var(--success-color);
+
+}
+.form-control.error input{
+    border-color:var(--error-color);
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+
+    visibility: visible;
+}
+
+.form button{
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px sold #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+</style>
+</head>
+<body id="radial-gradient">
+
+<div class="container">
+    <form id="form" class="form" autocomplete="off" action="#" method="post" enctype="multipart/form-data" onsubmit="reg()">
+        <h2>Register </h2>
+            <div class="form-control">
+            <label for="name"style="color:black;">Name</label>
+            <input type="text" id="name" name="name"placeholder="name">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="dob"style="color:black";>Dob</label>
+            <input type="date" id="dob" name="dob"placeholder="dob">
+            <small>Error message</small>
+            </div>
+            <div class="gender">
+            <label for="gender"style="color:black">Gender</label><br><br>
+			
+            <input type="radio" name="gender" id="Male" value = "male"/>male<br><br>
+		
+            <input type="radio" name="gender" id="Female" value = "female"/>female<br><br>
+            
+        </div>
+        
+        <div class="form-control">
+            <label for="email"style="color:black">Gmail</label>
+            <input type="text" id="email-address"name="gmail" placeholder="Enter email">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="mobileno"style="color:black">Mobileno</label>
+            <input type="text" id="mobileno" name="mobileno"placeholder="mobileno">
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="address"style="color:black">address</label>
+            <textarea id="address" name="address"placeholder="address"cols="30"rows="10"></textarea>
+            <small>Error message</small>
+        </div>
+       
+		<div class="form-control">
+		Already have account? <a href="user login.htm">LOGIN</a>
+		</div>
+        <button type="submit"name="submit">Submit</button>
+    </form>
+</div>
+<script>
+function reg() {
+  alert("Register Successfull");
+}
+</script>
+
+</body>
+</html>
