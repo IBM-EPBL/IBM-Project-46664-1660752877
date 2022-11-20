@@ -12,7 +12,7 @@
 | Technology    | Cloud Application Development| 
 
 
-## 🧑🏻‍🦰 Team Member
+## 🧑🏻‍ Team Members
 | Team Member   | Name             | Register No   |
 | ------------- | ---------------- | ------------- |
 | Team Lead     | JILA RASNAT B    | 711719104036  |
